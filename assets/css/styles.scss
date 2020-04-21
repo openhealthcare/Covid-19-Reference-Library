@@ -25,7 +25,6 @@ $text-colour: #212b32;
 $text-colour-on-dark: #FFF;
 $footer-height: 350px;
 $main-content-margin: 20px;
-$background-color: #f0f4f5;
 
 @font-face{
     font-family:"Frutiger LT W01_45 Ligh1475730";
@@ -57,7 +56,6 @@ html, body{
 }
 
 body {
-  background: $background-color;
   margin-top: 0;
   box-sizing: border-box;
   color: $text-colour;
@@ -450,9 +448,9 @@ h1{
 }
 
 hr {
-    border-top: 1px dotted $tertiary-colour;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-top: 1px solid $tertiary-colour;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .table-detail{
@@ -864,10 +862,10 @@ a{
   }
 
   &:hover{
-    background: $yellow;
-    box-shadow: 0 0 0 4px $yellow;
+    // background: $yellow;
+    // box-shadow: 0 0 0 4px $yellow;
     color: #212b32;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &:focus{

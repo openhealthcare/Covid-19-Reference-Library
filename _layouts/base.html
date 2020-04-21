@@ -35,13 +35,15 @@
             </div>
           </div>
         </div>
+        {% comment %}
         <div class="row header-nav hidden-print">
             <div class="col-md-12">
               <nav>
+
                 <ul>
                   <li>
                     <a href="{{site.baseurl}}/">
-                      Home
+                      Data Elements
                     </a>
                     <a href="{{site.baseurl}}/about">
                       About
@@ -51,11 +53,12 @@
               </nav>
             </div>
           </div>
+          {% endcomment %}
       </div>
     </header>
     <div class="container body-content">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-9">
           <section>
             {{ content }}
           </section>

@@ -1,0 +1,26 @@
+---
+layout: base
+permalink: /
+---
+
+<h1>Data Elements</h1>
+<div class="row">
+  <div class="col-md-10">
+    {% for post in site.data_elements %}
+      <div class="row content-offset-30">
+        <div class="col-md-12">
+          <h3 class="sub-row-title">
+            <a href="{{ post.url }}">
+              {{ post.dataset_name }}
+            </a>
+          </h3>
+          <p>
+            {{ post.content | markdownify }}
+          </p>
+        </div>
+      </div>
+      <hr />
+    {% endfor %}
+  </div>
+</div>
+

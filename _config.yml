@@ -1,0 +1,15 @@
+title: ""
+baseurl: ""
+collections_dir: content
+
+collections:
+  data_elements:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "data_elements"
+    values:
+      layout: "data_element"

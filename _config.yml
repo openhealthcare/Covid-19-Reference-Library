@@ -5,7 +5,7 @@ collections_dir: content
 collections:
   data_elements:
     output: false
-  first_letters:
+  datasets:
     output: true
 
 defaults:
@@ -18,6 +18,6 @@ defaults:
   -
     scope:
       path: ""
-      type: "first_letters"
+      type: "datasets"
     values:
       layout: "first_letter"

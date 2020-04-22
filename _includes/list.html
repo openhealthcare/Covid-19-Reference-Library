@@ -1,7 +1,7 @@
 <nav class="content-offset">
   <div class="row">
     <div class="col-md-12">
-      {% for i in site.first_letters %}
+      {% for i in site.datasets %}
       <a class="letter-link {% unless i.populated %}unpopulated{% endunless %} {% if include.letter.name==i.name %}active{% endif %}" href="{{ site.baseurl }}{{ i.url }}">
         {{ i.name }}
       </a>

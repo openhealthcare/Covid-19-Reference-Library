@@ -105,7 +105,7 @@ def generate_generate_data_elements(file_name):
             "populated": first_letter.lower() in populated_first_letters
         }
         write_to_file(
-            category="first_letters",
+            category="datasets",
             new_file_name=first_letter.lower(),
             template_name="first_letter.md.jinja",
             context=context

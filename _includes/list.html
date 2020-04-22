@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       {% for i in site.first_letters %}
-      <a class="letter-link {% unless i.populated %}unpopulated{% endunless %} {% if include.letter==i.name %}active{% endif %}" href="{{ i.url }}">
+      <a class="letter-link {% unless i.populated %}unpopulated{% endunless %} {% if include.letter==i.name %}active{% endif %}" href="{{ site.baseurl }}{{ i.url }}">
         {{ i.name }}
       </a>
       {% endfor %}

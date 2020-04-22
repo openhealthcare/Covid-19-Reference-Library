@@ -27,8 +27,10 @@
       {% endif %}
     {% endfor %}
   </div>
-  {% unless include.letter.populated %}
-    <h1 class="faded text-center">No Datasets start with {{ include.letter.name }}</h1>
-  {% endunless %}
+  {% if include.letter %}
+    {% unless include.letter.populated %}
+      <h1 class="faded text-center">No Datasets start with {{ include.letter.name }}</h1>
+    {% endunless %}
+  {% endif %}
 </div>
 

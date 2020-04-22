@@ -22,6 +22,6 @@ layout: base
     <p><strong>Data controller</strong><br> {{ page.data_controller }}</p>
     <p><strong>Data processor organisations</strong><br> {{ page.data_processor_organisations }}</p>
     <p><strong>Collecting and sharing governance</strong><br> {{ page.collecting_and_sharing_governance }}</p>
-    <p><strong>DPIA inclusion</strong><br> {{ page.dpia_inclusion }}</p>
+    <p><strong>DPIA inclusion</strong> {% if page.dpia_inclusion == 'Yes' %}<span class="glyphicon glyphicon-ok tick-icon" aria-hidden="true"></span>{% else %}<span class="glyphicon glyphicon-remove cross-icon" aria-hidden="true"></span>{% endif %}</p>
   </div>
 </div>

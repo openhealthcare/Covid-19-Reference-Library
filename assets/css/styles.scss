@@ -862,10 +862,10 @@ a{
   }
 
   &:hover{
-    // background: $yellow;
-    // box-shadow: 0 0 0 4px $yellow;
+    background: $yellow;
+    box-shadow: 0 0 0 4px $yellow;
     color: #212b32;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:focus{
@@ -1022,17 +1022,18 @@ table thead{
   margin-bottom: 0;
 }
 
-.diamond-icon{
+.tick-icon{
   font-size: 25px;
   color: $true-color;
   display: inline-block;
+  top: 6px;
 }
 
-.square-icon{
+.cross-icon{
   display: inline-block;
   font-size: 28px;
-  margin-top: -7px;
   color: $false-color;
+  top: 6px;
 }
 
 @media print {

@@ -557,21 +557,14 @@ hr {
   text-align: center;
   text-decoration: none;
 
-  &.unpopulated{
+  &.unpopulated, &.unpopulated:visited{
     background-color: lighten(desaturate($primary-colour, 50%), 15%);
   }
-
   &.active{
-    background-color: $tertiary-colour;
-    color: $text-colour-on-dark;
-  }
-
-  &.active:hover{
-    color: $text-colour-on-dark;
-  }
-
-  &.active:visited{
-    color: $text-colour-on-dark;
+    &:hover, &:active, &:visited, &:focus{
+        background-color: $tertiary-colour;
+        color: $text-colour;
+      }
   }
 
   &:hover, &:active, &:visited, &:focus{

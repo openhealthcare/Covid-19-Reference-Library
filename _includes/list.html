@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       {% for i in site.first_letters %}
-      <a class="letter-link {% unless i.populated %}unpopulated{% endunless %} {% if include.letter==i.name %}active{% endif %}" href="{{ site.baseurl }}{{ i.url }}">
+      <a class="letter-link {% unless i.populated %}unpopulated{% endunless %} {% if include.letter.name==i.name %}active{% endif %}" href="{{ site.baseurl }}{{ i.url }}">
         {{ i.name }}
       </a>
       {% endfor %}
@@ -12,7 +12,7 @@
 <div class="row content-offset">
   <div class="col-md-10">
     {% for post in site.data_elements | sort: "dataset_name" %}
-      {% if include.letter==post.first_letter or include.letter == None %}
+      {% if include.letter.name==post.first_letter or include.letter == None %}
       <div class="row content-offset-30">
         <div class="col-md-12">
           <h3 class="sub-row-title">
@@ -27,5 +27,8 @@
       {% endif %}
     {% endfor %}
   </div>
+  {% unless include.letter.populated %}
+    <h1 class="faded text-center">No Datasets start with {{ include.letter.name }}</h1>
+  {% endunless %}
 </div>
 

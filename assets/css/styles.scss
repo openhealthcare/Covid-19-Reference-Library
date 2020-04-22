@@ -550,27 +550,35 @@ hr {
   float: left;
   padding: 10px 0;
   background-color: $primary-colour;
+  box-shadow: none;
   color: $text-colour-on-dark;
   display: block;
   border: 1px solid $text-colour-on-dark;
   text-align: center;
   text-decoration: none;
 
+  &.unpopulated{
+    background-color: lighten(desaturate($primary-colour, 50%), 15%);
+  }
+
   &.active{
     background-color: $tertiary-colour;
-    color: $text-colour;
+    color: $text-colour-on-dark;
   }
 
   &.active:hover{
-    color: $text-colour;
+    color: $text-colour-on-dark;
   }
 
   &.active:visited{
-    color: $text-colour;
+    color: $text-colour-on-dark;
   }
 
-  &:hover, &:active, &:visited{
+  &:hover, &:active, &:visited, &:focus{
     color: $text-colour-on-dark;
+    box-shadow: none;
+    background-color: $primary-colour;
+    text-decoration: underline;
   }
 }
 .faded{

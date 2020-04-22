@@ -1,12 +1,13 @@
 ---
 dataset_name: "Testing PPE inventory"
-granularity: "Aggregate"
+granularity: ""
 source: "Deloitte"
-purpose_of_the_data: "Monitor the amount of PPE available in different locations to anticipate areas of high demand to allow for proactive supply."
+purpose_of_the_data: ""
 data_controller: ""
-dpia_inclusion: "No"
+dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
+first_letter: T
 ---
 Testing PPE inventory, burn rates, and demand forecasts.
 

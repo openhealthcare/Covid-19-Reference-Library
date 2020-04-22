@@ -1,11 +1,12 @@
 ---
 dataset_name: "Oxygen gas supply and capacity"
-granularity: "Aggregate"
-source: ""
-purpose_of_the_data: "Understand capacity limitations related to estates for oxygen supply to support modelling of the oxygen supply chain"
-data_controller: "NHS England"
-dpia_inclusion: "Yes"
-data_processor_organisations: "NHS England, Palantir"
+granularity: ""
+source: "Cabinet office"
+purpose_of_the_data: ""
+data_controller: ""
+dpia_inclusion: ""
+data_processor_organisations: ""
 collecting_and_sharing_governance: ""
+first_letter: O
 ---
 By trust and hospital - what is the oxygen supply, delivery capacity, gas pipeline system and ventilation system capacity

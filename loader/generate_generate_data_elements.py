@@ -9,6 +9,7 @@ import jinja2
 import os
 import shutil
 import json
+import string
 
 EXPECTED_FIELDS = [
     "dataset name",
@@ -22,12 +23,12 @@ EXPECTED_FIELDS = [
     "collecting and sharing governance"
 ]
 
-OUTPUT_DIR = "content/_data_elements/"
 CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(os.path.dirname(CURRENT_DIRECTORY), "content")
 
 
 def to_camel_case(field):
-    to_remove = ["(", ")", "/", ",", "-", "'", '"']
+    to_remove = ["(", ")", "/", ",", "'", '"']
     for i in to_remove:
         field = field.replace(i, "")
     field = field.strip().lower()
@@ -35,19 +36,38 @@ def to_camel_case(field):
     return field
 
 
+def write_to_file(*args, category, new_file_name, template_name, context):
+    directory = os.path.join(OUTPUT_DIR, f"_{category}")
+    if not os.path.exists(directory):
+        print(f"Creating {directory}")
+        os.mkdir(directory)
+    parent_dir = os.path.dirname(CURRENT_DIRECTORY)
+    output_file = os.path.join(
+        parent_dir, "content", f"_{category}", f"{new_file_name}.md"
+    )
+    env = jinja2.Environment(
+        loader=jinja2.FileSystemLoader(CURRENT_DIRECTORY)
+    )
+    template = env.get_template(template_name)
+    with open(output_file, "w") as f:
+        print(f"writing {output_file}")
+        f.write(template.render(**context))
+
+
 @click.command()
 @click.argument('file_name')
 def generate_generate_data_elements(file_name):
-    parent_dir = os.path.dirname(CURRENT_DIRECTORY)
-    output_dir = os.path.join(parent_dir, OUTPUT_DIR)
-    print(f"Deleting {output_dir}")
-    shutil.rmtree(output_dir)
-    print(f"Creating {output_dir}")
-    os.mkdir(output_dir)
+    print(f"Deleting {OUTPUT_DIR}")
+    shutil.rmtree(OUTPUT_DIR)
+    print(f"Creating {OUTPUT_DIR}")
+    os.mkdir(OUTPUT_DIR)
     expected_fields = [
         to_camel_case(i) for i in EXPECTED_FIELDS
     ]
 
+    populated_first_letters = set()
+
+    # Generates all the data set pages
     with open(file_name) as f:
         csv_reader = csv.DictReader(f)
         found = sorted([to_camel_case(i) for i in csv_reader.fieldnames])
@@ -61,15 +81,35 @@ def generate_generate_data_elements(file_name):
                     context[to_camel_case(k)] = v.strip()
                 else:
                     context[to_camel_case(k)] = json.dumps(v.strip())
-            file_name = "{}.md".format(to_camel_case(context["dataset_name"]))
-            abs_file_name = os.path.join(output_dir, file_name)
-            env = jinja2.Environment(
-                loader=jinja2.FileSystemLoader(CURRENT_DIRECTORY)
+
+                if to_camel_case(k) == "dataset_name":
+                    first_letter = to_camel_case(v)[0]
+
+                    if first_letter.isnumeric():
+                        first_letter = "0-9"
+                    context["first_letter"] = first_letter.upper()
+                    populated_first_letters.add(first_letter)
+
+            write_to_file(
+                category="data_elements",
+                new_file_name=to_camel_case(context["dataset_name"]),
+                template_name='data_element.md.jinja',
+                context=context
             )
-            template = env.get_template('data_element.md.jinja')
-            with open(abs_file_name, "w") as f:
-                print(f"writing {file_name}")
-                f.write(template.render(**context))
+
+    first_letters = ["0-9"] + [i for i in string.ascii_uppercase]
+
+    for first_letter in first_letters:
+        context = {
+            "name": first_letter,
+            "populated": first_letter.lower() in populated_first_letters
+        }
+        write_to_file(
+            category="first_letters",
+            new_file_name=first_letter.lower(),
+            template_name="first_letter.md.jinja",
+            context=context
+        )
 
 
 if __name__ == '__main__':

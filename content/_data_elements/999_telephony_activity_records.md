@@ -1,11 +1,12 @@
 ---
 dataset_name: "999 telephony activity records"
-granularity: "Record level"
+granularity: ""
 source: "NHS Digital"
-purpose_of_the_data: "Understand usage of NHS 999 and demand for services, to support capacity planning"
-data_controller: "NHS England"
+purpose_of_the_data: ""
+data_controller: ""
 dpia_inclusion: ""
-data_processor_organisations: "NHS England"
+data_processor_organisations: ""
 collecting_and_sharing_governance: ""
+first_letter: 0-9
 ---
 Gives aggregate view of calls to the 999 service broken down by CCG and disposition code

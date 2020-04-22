@@ -1,0 +1,33 @@
+<nav class="content-offset">
+  <div class="row">
+    <div class="col-md-12">
+      {% for i in site.first_letters %}
+      <a class="letter-link {% unless i.populated %}unpopulated{% endunless %} {% if include.letter==i.name %}active{% endif %}" href="{{ i.url }}">
+        {{ i.name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+<div class="row content-offset">
+  <div class="col-md-10">
+    {% for post in site.data_elements | sort: "dataset_name" %}
+      {% if include.letter==post.first_letter or include.letter == None %}
+      <div class="row content-offset-30">
+        <div class="col-md-12">
+          <h3 class="sub-row-title">
+            <a href="{{ post.url }}">
+              {{ post.dataset_name }} <small>{{ post.source }}</small>
+            </a>
+          </h3>
+          <p>
+            {{ post.content | markdownify }}
+          </p>
+        </div>
+      </div>
+      <hr />
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+

@@ -2,26 +2,6 @@
 layout: base
 permalink: /
 ---
-
-<h1>Datasets</h1>
+<h1 class="content-offset" >Datasets</h1>
 The COVID19 Reference Library describes metadata for the contents of the COVID19 datastore.
-<div class="row content-offset">
-  <div class="col-md-10">
-    {% for post in site.data_elements %}
-      <div class="row content-offset-30">
-        <div class="col-md-12">
-          <h3 class="sub-row-title">
-            <a href="{{ post.url }}">
-              {{ post.dataset_name }} <small>{{ post.source }}</small>
-            </a>
-          </h3>
-          <p>
-            {{ post.content | markdownify }}
-          </p>
-        </div>
-      </div>
-      <hr />
-    {% endfor %}
-  </div>
-</div>
-
+{% include list.html %}

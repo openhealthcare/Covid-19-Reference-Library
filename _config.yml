@@ -5,6 +5,8 @@ collections_dir: content
 collections:
   data_elements:
     output: true
+  first_letters:
+    output: true
 
 defaults:
   -
@@ -13,3 +15,9 @@ defaults:
       type: "data_elements"
     values:
       layout: "data_element"
+  -
+    scope:
+      path: ""
+      type: "first_letters"
+    values:
+      layout: "first_letter"

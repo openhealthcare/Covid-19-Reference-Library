@@ -1,11 +1,12 @@
 ---
 dataset_name: "Shielded Patient List"
-granularity: "Record level"
+granularity: ""
 source: "NHS Digital"
-purpose_of_the_data: "Understand outcomes for patients being shielded to monitor the effectiveness of the shielding programme"
+purpose_of_the_data: ""
 data_controller: ""
-dpia_inclusion: "No"
+dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
+first_letter: S
 ---
 Dataset provided by NHS Digital, containing record level information for patients that are part of the shielding programme.

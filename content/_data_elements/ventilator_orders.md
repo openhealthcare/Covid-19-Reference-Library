@@ -1,11 +1,12 @@
 ---
 dataset_name: "Ventilator Orders"
 granularity: ""
-source: ""
-purpose_of_the_data: "Understand total capacity for ventilators"
-data_controller: "NHS England"
-dpia_inclusion: "Yes"
-data_processor_organisations: "NHS England, Palantir"
+source: "Cabinet office"
+purpose_of_the_data: ""
+data_controller: ""
+dpia_inclusion: ""
+data_processor_organisations: ""
 collecting_and_sharing_governance: ""
+first_letter: V
 ---
 From each supplier, country, price how many delivered each week

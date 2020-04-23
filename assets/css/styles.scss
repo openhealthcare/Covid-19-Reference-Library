@@ -762,6 +762,11 @@ label {
     right: -46px;
     top: 20px;
     font-size: 19px;
+
+    .label-primary{
+        background-color: lighten(desaturate($primary-colour, 50%), 15%);
+        color: $text-colour-on-dark;
+    }
 }
 
 #no-items{

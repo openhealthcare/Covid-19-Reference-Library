@@ -71,6 +71,11 @@ body {
   border: 5px solid #e8edee;
 }
 
+// the headers on the about page
+#what-are-we-doing, #why-are-we-doing-it, #how-is-confidentiality-being-protected{
+    margin-top: 72px
+}
+
 .text-danger{
   color: $danger-color;
 }
@@ -190,7 +195,7 @@ h4.subheader{
 header.masthead{
   background-color: $primary-colour;
   // height: 223px;
-  padding: 27px 0 0 0;
+  padding: 47px 0 0 0;
 
   .container, .container-fluid{
     overflow-y: hidden;
@@ -206,10 +211,11 @@ header.masthead{
       display: inline-block;
       height: 90px;
       width: auto;
+      margin-top: -30px;
     }
   }
 
-  .subtitle{
+  .title{
     display: inline-block;
     padding-left: 30px;
     color: $text-colour-on-dark;
@@ -218,6 +224,13 @@ header.masthead{
       float: right;
       font-size: 20px;
     }
+  }
+
+  .subtitle{
+    color: $text-colour-on-dark;
+    font-size: 65%;
+    font-weight: 400;
+    margin-top: 5px;
   }
 
   .banner{
@@ -749,19 +762,16 @@ label {
   }
 }
 
-.top-banner{
-    background-color: $primary-colour;
-    color: $text-colour-on-dark;
-    text-align: right;
-    padding-right: 20px;
-    padding-top: 20px;
-}
-
 .title-label{
     position: absolute;
     right: -46px;
     top: 20px;
     font-size: 19px;
+
+    .label-primary{
+        background-color: lighten(desaturate($primary-colour, 50%), 15%);
+        color: $text-colour-on-dark;
+    }
 }
 
 #no-items{

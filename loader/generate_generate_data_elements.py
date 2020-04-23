@@ -20,7 +20,8 @@ EXPECTED_FIELDS = [
     "data controller",
     "dpia inclusion",
     "data processor organisations",
-    "collecting and sharing governance"
+    "collecting and sharing governance",
+    "new?"
 ]
 
 CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
@@ -77,8 +78,10 @@ def generate_generate_data_elements(file_name):
         for row in csv_reader:
             context = {}
             for k, v in row.items():
-                if k == "Dataset description":
+                if k.lower() == "dataset description":
                     context[to_camel_case(k)] = v.strip()
+                elif k.lower() == "new?":
+                    context["new"] = v
                 else:
                     context[to_camel_case(k)] = json.dumps(v.strip())
 

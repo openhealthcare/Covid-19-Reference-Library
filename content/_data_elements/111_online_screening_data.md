@@ -8,5 +8,6 @@ dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
 first_letter: 0-9
+new: New
 ---
-Gives aggregate view of use of the 111 online service broken down by CCG and disposition code
+Aggregated view of how and where the NHS 111 online service is being used, broken down by clinical commissioning group (CCG) and disposition code to allow for geographical and outcomes analysis.

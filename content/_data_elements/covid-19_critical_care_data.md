@@ -1,5 +1,5 @@
 ---
-dataset_name: "COVID Critical Care data"
+dataset_name: "Covid-19 critical care data"
 granularity: ""
 source: "Directory of services (DoS)"
 purpose_of_the_data: ""
@@ -8,5 +8,6 @@ dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
 first_letter: C
+new: New
 ---
-From DOS (Directory of Services). More detail provided in the adult critical care bed state definitions document
+From DOS (Directory of Services). More detail provided in the adult critical care bed state definitions document.

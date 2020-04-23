@@ -16,11 +16,22 @@
       <div class="row content-offset-30">
         <div class="col-md-12">
           <h3 class="sub-row-title">
-            {{ post.dataset_name }} <small>{{ post.source }}</small>
+            {{ post.dataset_name }} <small>
+              {{ post.source }}
+
+            </small>
+            {% if post.new %}
+            <div class="title-label">
+              <span class="label label-primary">New</span>
+            </div>
+            {% endif %}
           </h3>
+
           <p>
             {{ post.content | markdownify }}
+            <br />
           </p>
+
         </div>
       </div>
       <hr />

@@ -1,5 +1,5 @@
 ---
-dataset_name: "Care home beds"
+dataset_name: "Covid-19 related death information"
 granularity: ""
 source: "Health & Care Providers"
 purpose_of_the_data: ""
@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: C
 new: New
 ---
-Capacity information for bed availability in care homes - received via LogicApp. Partial coverage of England care homes.
+Patients who have died in hospitals in England who had tested positive for Covid-19 at time of death. Includes all deaths reported up to 5pm on the previous day.

@@ -8,5 +8,6 @@ dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
 first_letter: O
+new: New
 ---
-By trust and hospital - what is the oxygen supply, delivery capacity, gas pipeline system and ventilation system capacity
+Details the is the oxygen supply, delivery capacity, gas pipeline system and ventilation system capacity. Broken down by trust and hospital.

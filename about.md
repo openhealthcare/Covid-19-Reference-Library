@@ -5,10 +5,30 @@ permalink: /about/
 ---
 
 # About
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, ante vitae volutpat vestibulum, risus tellus tincidunt purus, posuere aliquet ligula quam eu nibh. Donec accumsan arcu quis malesuada gravida. Suspendisse potenti. Etiam lobortis vestibulum ex, interdum suscipit odio hendrerit ac. Aliquam erat volutpat. Nulla tempus at urna in cursus. Proin sit amet dolor ut ipsum iaculis rutrum. Vivamus in felis ut mi tempor laoreet eu et augue. Fusce id rhoncus sapien, ac facilisis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur venenatis faucibus diam.
 
-Cras magna lorem, vulputate et lorem eget, ornare luctus diam. Nam faucibus turpis nulla. Nulla non velit mattis, suscipit justo at, tincidunt nisl. Vestibulum laoreet neque a ipsum tincidunt, in sodales enim lobortis. Quisque suscipit tortor eget mauris commodo faucibus. Aenean mi eros, pulvinar sit amet nulla eu, bibendum vehicula nisi. Suspendisse gravida facilisis felis, eu dignissim metus pellentesque ac. Mauris sagittis mi quis felis maximus, id viverra ligula consectetur. Vestibulum congue magna metus, et accumsan enim placerat in. Vivamus luctus erat ac erat porta, vel finibus massa vestibulum. Integer sed nisi aliquam, auctor libero eget, fringilla nisl. Vivamus luctus mollis tristique. Sed dui magna, mollis placerat sodales at, tempus sit amet velit.
+### What are we doing?
+The Government has commissioned NHS England and NHS Improvement and NHSX to develop a data platform that will provide those national organisations responsible for coordinating the response with secure, reliable and timely data - in a way that protects the privacy of our citizens - in order to make informed, effective decisions.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt, ante vitae volutpat vestibulum, risus tellus tincidunt purus, posuere aliquet ligula quam eu nibh. Donec accumsan arcu quis malesuada gravida. Suspendisse potenti. Etiam lobortis vestibulum ex, interdum suscipit odio hendrerit ac. Aliquam erat volutpat. Nulla tempus at urna in cursus. Proin sit amet dolor ut ipsum iaculis rutrum. Vivamus in felis ut mi tempor laoreet eu et augue. Fusce id rhoncus sapien, ac facilisis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur venenatis faucibus diam.
+NHS England and Improvement have created a data store to bring multiple data sources into a single, secure location, namely the NHS Covid-19 Datastore. Data needed to inform the Covid-19 response has come from across the NHS, social care and partner organisations.
 
-Cras magna lorem, vulputate et lorem eget, ornare luctus diam. Nam faucibus turpis nulla. Nulla non velit mattis, suscipit justo at, tincidunt nisl. Vestibulum laoreet neque a ipsum tincidunt, in sodales enim lobortis. Quisque suscipit tortor eget mauris commodo faucibus. Aenean mi eros, pulvinar sit amet nulla eu, bibendum vehicula nisi. Suspendisse gravida facilisis felis, eu dignissim metus pellentesque ac. Mauris sagittis mi quis felis maximus, id viverra ligula consectetur. Vestibulum congue magna metus, et accumsan enim placerat in. Vivamus luctus erat ac erat porta, vel finibus massa vestibulum. Integer sed nisi aliquam, auctor libero eget, fringilla nisl. Vivamus luctus mollis tristique. Sed dui magna, mollis placerat sodales at, tempus sit amet velit.
+To provide a single source of truth about the rapidly evolving situation, data is integrated, cleaned, and harmonised in order to develop a single and reliable source of information that is needed to support decision-making.
+
+**All NHS data in the store will remain under NHS England and NHS Improvement’s control. Once the public health emergency situation has ended, data will either be destroyed or returned in line with the law and the strict contractual agreements that are in place between the NHS and partners.**
+
+
+### Why are we doing it?
+By consolidating information from across the NHS, social care and partner organisations we give decision-makers more accurate visibility into the status of the response. This includes metrics such as:
+* Current occupancy levels at hospitals, broken down by general beds and specialist and/or critical care beds
+* Current capacity of A&E departments and current waiting times
+Statistics about the lengths of stay for Covid-19 patients
+
+These metrics can be analysed from national level down to individual NHS Trusts, hospitals and GP practices. With an accurate view of these metrics in place the data allows decision-makers to answer questions about the response and explore the impact that different decisions would have. This enables a better understanding of how the virus is spreading, when and where the healthcare system will face strain, and which interventions can best mitigate the crisis.
+
+
+### How is confidentiality being protected?
+While moving at speed, essential data governance procedures and established principles of openness and transparency remain at the core of everything we do. We are following the same rules for information governance that underpin our day-to-day work.
+
+The data brought into the back end datastore held by NHS England and NHS Improvement is largely from existing data sources e.g. data already collected by NHS England and NHS Improvement, Public Health England and NHS Digital. All NHS data remains under NHS England and NHS Improvement control.
+
+All the data held in the platform is subject to strict controls that meet the requirements of data protection legislation. GDPR principles are followed, for example the data is only used for Covid-19 and not for any other purpose, only relevant information is collected and a legal basis is established before analysis is shared with any party. Any request to access data is reviewed through a single process controlled solely by NHS England and NHS Improvement and NHSX.
+

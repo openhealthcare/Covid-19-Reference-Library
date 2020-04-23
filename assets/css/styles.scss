@@ -71,8 +71,13 @@ body {
   border: 5px solid #e8edee;
 }
 
+// the headers on the about page
+#what-are-we-doing, #why-are-we-doing-it, #how-is-confidentiality-being-protected{
+    margin-top: 72px
+}
+
 .text-danger{
-  color: $danger-color;
+  color: $danger-color;how-is-confidentiality-being-protected
 }
 
 .breadcrumbs {

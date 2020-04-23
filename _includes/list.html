@@ -14,7 +14,7 @@
     {% for post in site.data_elements | sort: "dataset_name" %}
       {% if include.letter.name==post.first_letter or include.letter == None %}
       <div class="row content-offset-30">
-        <div class="col-md-12">
+        <div class="col-md-11">
           <h3 class="sub-row-title">
             {{ post.dataset_name }} <small>
               {{ post.source }}

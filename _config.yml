@@ -1,6 +1,7 @@
 title: ""
 baseurl: "/Covid-19-Reference-Library"
 collections_dir: content
+exclude: [loader]
 
 collections:
   data_elements:

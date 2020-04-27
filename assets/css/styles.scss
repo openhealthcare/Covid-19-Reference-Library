@@ -559,6 +559,11 @@ hr {
   border: 1px solid $text-colour-on-dark;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
+
+  @media screen and (max-width: 768px){
+    width: 15%;
+  }
 
   &.unpopulated, &.unpopulated:visited{
     background-color: lighten(desaturate($primary-colour, 50%), 15%);

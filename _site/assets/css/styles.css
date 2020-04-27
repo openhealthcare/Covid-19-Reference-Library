@@ -369,7 +369,11 @@ hr {
   display: block;
   border: 1px solid #FFF;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  white-space: nowrap; }
+  @media screen and (max-width: 768px) {
+    .letter-link {
+      width: 15%; } }
   .letter-link.unpopulated, .letter-link.unpopulated:visited {
     background-color: #4484c1; }
   .letter-link.active:hover, .letter-link.active:active, .letter-link.active:visited, .letter-link.active:focus {

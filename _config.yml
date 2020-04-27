@@ -1,5 +1,5 @@
 title: ""
-baseurl: "/Covid-19-Reference-Library"
+baseurl: "/covid-19"
 collections_dir: content
 exclude: [loader]
 

@@ -142,13 +142,13 @@ header.masthead {
     font-weight: 400;
     margin-top: 5px; }
   header.masthead .banner {
-    height: 120px; }
+    height: 140px; }
     @media print {
       header.masthead .banner {
         height: 40px; } }
     @media screen and (max-width: 768px) {
       header.masthead .banner {
-        height: 200px;
+        height: 225px;
         margin-bottom: 30px; } }
   header.masthead .header-nav {
     height: 63px; }

@@ -223,14 +223,14 @@ header.masthead{
   }
 
   .banner{
-    height: 120px;
+    height: 140px;
 
     @media print {
       height: 40px;
     }
 
     @media screen and (max-width: 768px){
-      height: 200px;
+      height: 225px;
       margin-bottom: 30px;
     }
   }

@@ -47,10 +47,10 @@
             <nav>
               <ul>
                 <li>
-                  <a href="{{site.baseurl}}/">
+                  <a {% unless page.url == "/about/" %}class="active" {% endunless %} href="{{site.baseurl}}/">
                     Datasets
                   </a>
-                  <a href="{{site.baseurl}}/about">
+                  <a {% if page.url == "/about/" %}class="active" {% endif %} href="{{site.baseurl}}/about">
                     About
                   </a>
                 </li>

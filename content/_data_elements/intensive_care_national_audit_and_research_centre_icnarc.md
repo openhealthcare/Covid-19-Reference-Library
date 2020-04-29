@@ -11,7 +11,7 @@ first_letter: I
 new: New
 ---
 What support is being given to a patient and clinical information about that patient. Reporting completed; 
-(i) after Covid-19 case enters a unit
+(i) after COVID-19 case enters a unit
 (ii) after 24 hours
 (iii) after patient leaves critical care
 (iv) after patient discharge.

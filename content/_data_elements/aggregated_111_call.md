@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: A
 new: New
 ---
-Number of daily triaged calls per clinical commissioning group (CCG) and among triaged calls number of A&E, ambulance and primary care calls. Includes disposal of call. Contains information on all 111 calls, not just those specifically related to Covid-19.
+Number of daily triaged calls per clinical commissioning group (CCG) and among triaged calls number of A&E, ambulance and primary care calls. Includes disposal of call. Contains information on all 111 calls, not just those specifically related to COVID-19.

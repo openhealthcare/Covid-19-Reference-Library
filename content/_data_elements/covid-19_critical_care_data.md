@@ -1,5 +1,5 @@
 ---
-dataset_name: "Covid-19 critical care data"
+dataset_name: "COVID-19 critical care data"
 granularity: ""
 source: "Directory of services (DoS)"
 purpose_of_the_data: ""

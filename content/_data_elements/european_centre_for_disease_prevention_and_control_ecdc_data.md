@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: E
 new: New
 ---
-Geographic distribution of Covid-19 cases worldwide, including infections, recoveries and fatalities which is reported on a daily basis.
+Geographic distribution of COVID-19 cases worldwide, including infections, recoveries and fatalities which is reported on a daily basis.

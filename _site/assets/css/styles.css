@@ -17,6 +17,9 @@ body {
   line-height: 28px;
   overflow-x: hidden; }
 
+#about {
+  margin-top: 50px; }
+
 .header-img {
   max-width: 100%;
   border: 5px solid #e8edee; }

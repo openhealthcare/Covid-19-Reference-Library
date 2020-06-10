@@ -1,5 +1,5 @@
 ---
-dataset_name: "Shielded patient list"
+dataset_name: "Shielded Patient List"
 granularity: ""
 source: "NHS Digital"
 purpose_of_the_data: ""
@@ -8,6 +8,6 @@ dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
 first_letter: S
-new: New
+new: 
 ---
 Dataset provided by NHS Digital, containing record level information for patients that are part of the shielding programme.

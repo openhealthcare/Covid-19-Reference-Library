@@ -8,6 +8,6 @@ dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
 first_letter: C
-new: New
+new: 
 ---
-Contains epidemiological data (demographics, risk factors and clinical information on severity and outcome) on Covid-19 infection in persons requiring hospitalisation and intensive care unit (ICU)/high dependency unit (HDU).
+Contains epidemiological data on COVID-19 infection in persons requiring hospitalisation and intensive care unit (ICU)/high dependency unit (HDU).

@@ -1,5 +1,5 @@
 ---
-dataset_name: "Mental Health COVID SITREP"
+dataset_name: "Mental Health COVID-19 SITREP"
 granularity: ""
 source: "NHS England"
 purpose_of_the_data: ""
@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: M
 new: 
 ---
-Covid-19 SitRep for mental health providers.
+COVID-19 SITREP for mental health providers.

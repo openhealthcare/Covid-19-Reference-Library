@@ -1,5 +1,5 @@
 ---
-dataset_name: "COVID related death information"
+dataset_name: "COVID-19 related death information"
 granularity: ""
 source: "NHS England"
 purpose_of_the_data: ""

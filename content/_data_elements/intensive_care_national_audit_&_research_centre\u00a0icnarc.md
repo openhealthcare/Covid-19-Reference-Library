@@ -1,5 +1,5 @@
 ---
-dataset_name: "ICNARC"
+dataset_name: "Intensive Care National Audit & Research Centre\u00a0(ICNARC)"
 granularity: ""
 source: "NHS England"
 purpose_of_the_data: ""

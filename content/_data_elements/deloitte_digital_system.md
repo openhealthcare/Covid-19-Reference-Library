@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: D
 new: 
 ---
-The outputs form the DHSC /  Deloitte Digital System: the booking data for all tests for pillar 2  - regional and satellite test centres, and mobile testing units.
+The outputs from the DHSC / Deloitte Digital System: the booking data for all tests for pillar 2 - regional and satellite test centres, and mobile testing units.

@@ -1,5 +1,5 @@
 ---
-dataset_name: "End of Day Report at Satellite Test centres (STCs)"
+dataset_name: "End of Day Report at STCs"
 granularity: ""
 source: "DHSC"
 purpose_of_the_data: ""

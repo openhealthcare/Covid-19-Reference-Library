@@ -1,5 +1,5 @@
 ---
-dataset_name: "SUS+ ECDS"
+dataset_name: "Hospital COVID-19 SITREP v2"
 granularity: ""
 source: "NHS England"
 purpose_of_the_data: ""
@@ -7,7 +7,7 @@ data_controller: ""
 dpia_inclusion: ""
 data_processor_organisations: ""
 collecting_and_sharing_governance: ""
-first_letter: S
+first_letter: H
 new: 
 ---
-Contains details on emergency care attendances, including A&E and urgent care/walk-in centres.
+Daily situation report on the current situation with COVID-19 patients in NHS hospitals and NHS funded hospitals.

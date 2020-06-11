@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: A
 new: 
 ---
-Number of daily triaged calls per clinical commissioning group (CCG).
+Number of daily triaged calls per clinical commissioning group (CCG). Contains information on all NHS 111 calls.

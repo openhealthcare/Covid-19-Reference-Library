@@ -1,5 +1,5 @@
 ---
-dataset_name: "Covid-19 Hospitalisation in England Surveillance System (CHESS)"
+dataset_name: "COVID-19 Hospitalisation in England Surveillance System (CHESS)"
 granularity: ""
 source: "Public Health England"
 purpose_of_the_data: ""

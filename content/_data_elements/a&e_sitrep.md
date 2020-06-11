@@ -1,5 +1,5 @@
 ---
-dataset_name: "A&E sitrep"
+dataset_name: "A&E SITREP"
 granularity: ""
 source: "NHS Improvement"
 purpose_of_the_data: ""

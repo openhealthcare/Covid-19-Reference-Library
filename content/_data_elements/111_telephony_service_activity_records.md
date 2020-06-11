@@ -10,4 +10,4 @@ collecting_and_sharing_governance: ""
 first_letter: 0-9
 new: 
 ---
-Aggregated view of calls to the NHS 111 service broken down by clinical commissioning group (CCG) and disposition code to allow for geographical and outcomes analysis.
+Aggregated view of calls to the NHS 111 service broken down by clinical commissioning group (CCG) and disposition code to allow for geographical and outcomes analysis. These are calls to the NHS 111 service which are specific to COVID-19.

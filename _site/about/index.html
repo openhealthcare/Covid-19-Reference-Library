@@ -9,13 +9,13 @@
     <meta http-equiv="expires" content="-1" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/covid-19/assets/favicon.ico">
 
     <title>COVID-19 Datastore Reference Library</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+    <link rel="stylesheet" href="/covid-19/assets/css/styles.css">
   </head>
   <body>
     <header class="masthead">
@@ -26,8 +26,8 @@
               <div class="col-md-12">
                 <div class="top-logo">
                   <hgroup class="header-strapline">
-                    <a class="logo" href="{{site.baseurl}}">
-                      <img src="{{site.baseurl}}/assets/img/nhs-logo-rev.svg" alt="NHS England" title="NHS England">
+                    <a class="logo" href="/covid-19">
+                      <img src="/covid-19/assets/img/nhs-logo-rev.svg" alt="NHS England" title="NHS England">
                       <div style="display: inline-block">
                         <h2 class="title">COVID-19 Data Store Reference Library
                           <div class="subtitle">
@@ -47,10 +47,10 @@
             <nav>
               <ul>
                 <li>
-                  <a {% unless page.url == "/about/" %}class="active" {% endunless %} href="{{site.baseurl}}/">
+                  <a  href="/covid-19/">
                     Datasets
                   </a>
-                  <a {% if page.url == "/about/" %}class="active" {% endif %} href="{{site.baseurl}}/about">
+                  <a class="active"  href="/covid-19/about">
                     About
                   </a>
                 </li>
@@ -64,7 +64,16 @@
       <div class="row">
         <div class="col-md-9">
           <section>
-            {{ content }}
+            <h1 id="about">About</h1>
+
+<p>In line with COVID‑19 <a href="https://www.gov.uk/government/publications/coronavirus-covid-19-notification-of-data-controllers-to-share-information">Control of Patient Information (COPI) notices</a>, issued by the Secretary of State for Health and Care, all data held in the NHS COVID‑19 Data Store always remains under the control of the NHS and is being processed in accordance with the law. The <a href="https://www.england.nhs.uk/publication/data-protection-impact-assessment-nhs-covid-19-data-store/">Data Protection Impact Assessment</a> has been published and our <a href="https://www.england.nhs.uk/contact-us/privacy-notice/how-we-use-your-information/covid-19-response/nhs-covid-19-data-store/">Privacy Notice</a> explains what this means for patients.</p>
+
+<p>The NHS COVID‑19 Reference Library describes the datasets being used in the NHS COVID‑19 Data Store, and the sources of those datasets.</p>
+
+<p>Please note: the below list is not exhaustive and all planned datasets may not be included. As more data is added to support the COVID‑19 response the list will be updated.</p>
+
+<p>For information on how to request access to dashboards or specific datasets in the NHS COVID-19 Data Store or to request a new existing dataset is included in the NHS COVID‑19 Data Store please visit the <a href="https://www.england.nhs.uk/ourwork/tsd/data-info/">NHS England and NHS Improvement website</a>.</p>
+
           </section>
         </div>
       </div>

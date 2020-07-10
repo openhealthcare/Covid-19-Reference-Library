@@ -9,13 +9,13 @@
     <meta http-equiv="expires" content="-1" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/covid-19/assets/favicon.ico">
 
     <title>COVID-19 Datastore Reference Library</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+    <link rel="stylesheet" href="/covid-19/assets/css/styles.css">
   </head>
   <body>
     <header class="masthead">
@@ -26,8 +26,8 @@
               <div class="col-md-12">
                 <div class="top-logo">
                   <hgroup class="header-strapline">
-                    <a class="logo" href="{{site.baseurl}}">
-                      <img src="{{site.baseurl}}/assets/img/nhs-logo-rev.svg" alt="NHS England" title="NHS England">
+                    <a class="logo" href="/covid-19">
+                      <img src="/covid-19/assets/img/nhs-logo-rev.svg" alt="NHS England" title="NHS England">
                       <div style="display: inline-block">
                         <h2 class="title">COVID-19 Data Store Reference Library
                           <div class="subtitle">
@@ -47,10 +47,10 @@
             <nav>
               <ul>
                 <li>
-                  <a {% unless page.url == "/about/" %}class="active" {% endunless %} href="{{site.baseurl}}/">
+                  <a class="active"  href="/covid-19/">
                     Datasets
                   </a>
-                  <a {% if page.url == "/about/" %}class="active" {% endif %} href="{{site.baseurl}}/about">
+                  <a  href="/covid-19/about">
                     About
                   </a>
                 </li>
@@ -64,7 +64,27 @@
       <div class="row">
         <div class="col-md-9">
           <section>
-            {{ content }}
+            <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
           </section>
         </div>
       </div>

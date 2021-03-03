@@ -15,13 +15,6 @@ EXPECTED_FIELDS = [
     "dataset name",
     "Dataset description",
     "source",
-    "granularity",
-    "purpose of the data",
-    "data controller",
-    "dpia inclusion",
-    "data processor organisations",
-    "collecting and sharing governance",
-    "new?"
 ]
 
 CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))

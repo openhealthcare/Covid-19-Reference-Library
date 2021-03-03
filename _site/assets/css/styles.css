@@ -748,3 +748,11 @@ table thead {
   a[href]:after {
     display: none;
     visibility: hidden; } }
+.sub-row-title p {
+  margin-top: 4px; }
+.sub-row-title a, .sub-row-title a:visited {
+  color: #777;
+  text-decoration: underline; }
+
+ul {
+  list-style-type: '- '; }

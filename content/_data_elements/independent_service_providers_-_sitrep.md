@@ -1,13 +1,6 @@
 ---
 dataset_name: "Independent Service Providers - SITREP"
-granularity: ""
-source: "NHS England"
-purpose_of_the_data: ""
-data_controller: ""
-dpia_inclusion: ""
-data_processor_organisations: ""
-collecting_and_sharing_governance: ""
+source: "NHS England and NHS Improvement"
 first_letter: I
-new: 
 ---
 COVID-19 SITREP for independent service providers (ISPs).

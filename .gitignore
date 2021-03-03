@@ -1,4 +1,5 @@
 loader/_site
+_site/feed.xml
 .sass-cache
 .jekyll-metadata
 .DS_Store

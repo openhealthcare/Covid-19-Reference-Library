@@ -17,7 +17,7 @@
         <div class="col-md-11">
           <h3 class="sub-row-title">
             {{ post.dataset_name }} <br /><small>
-              {{ post.source }}
+              {{ post.source | markdownify }}
 
             </small>
             {% if post.new %}

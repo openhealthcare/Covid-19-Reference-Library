@@ -1063,3 +1063,17 @@ table thead{
      visibility: hidden;
   }
 }
+
+.sub-row-title{
+    p{
+        margin-top: 4px;
+    }
+    a, a:visited{
+        color: #777 ;
+        text-decoration: underline;
+    }
+}
+
+ul {
+    list-style-type: '- ';
+}

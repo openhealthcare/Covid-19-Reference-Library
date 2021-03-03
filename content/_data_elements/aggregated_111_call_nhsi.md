@@ -1,13 +1,6 @@
 ---
 dataset_name: "Aggregated 111 call (NHSI)"
-granularity: ""
-source: "NHS Improvement"
-purpose_of_the_data: ""
-data_controller: ""
-dpia_inclusion: ""
-data_processor_organisations: ""
-collecting_and_sharing_governance: ""
+source: "NHS England and NHS Improvement"
 first_letter: A
-new: 
 ---
 Number of daily triaged calls per clinical commissioning group (CCG). Contains information on all NHS 111 calls.

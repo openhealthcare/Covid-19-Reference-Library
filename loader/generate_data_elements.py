@@ -50,14 +50,12 @@ def write_to_file(*args, category, new_file_name, template_name, context):
 
 @click.command()
 @click.argument('file_name')
-def generate_generate_data_elements(file_name):
+def generate_data_elements(file_name):
     print(f"Deleting {OUTPUT_DIR}")
     shutil.rmtree(OUTPUT_DIR)
     print(f"Creating {OUTPUT_DIR}")
     os.mkdir(OUTPUT_DIR)
-    expected_fields = [
-        to_camel_case(i) for i in EXPECTED_FIELDS
-    ]
+    expected = sorted([to_camel_case(i) for i in EXPECTED_FIELDS])
 
     populated_first_letters = set()
 
@@ -65,9 +63,9 @@ def generate_generate_data_elements(file_name):
     with open(file_name) as f:
         csv_reader = csv.DictReader(f)
         found = sorted([to_camel_case(i) for i in csv_reader.fieldnames])
-        expected = sorted([to_camel_case(i) for i in EXPECTED_FIELDS])
-        if not set(found) == set(expected_fields):
-            raise ValueError(f"Expected fields, {expected}, found {found}")
+        missing = set(expected) - set(found)
+        if missing:
+            raise ValueError(f"Missing fields, {missing}")
         for row in csv_reader:
             context = {}
             for k, v in row.items():
@@ -109,4 +107,4 @@ def generate_generate_data_elements(file_name):
 
 
 if __name__ == '__main__':
-    generate_generate_data_elements()
+    generate_data_elements()

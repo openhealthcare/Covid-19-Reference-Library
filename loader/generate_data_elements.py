@@ -11,11 +11,12 @@ import shutil
 import json
 import string
 
-EXPECTED_FIELDS = [
-    "dataset name",
-    "Dataset description",
-    "source",
-]
+
+MAPPING = {
+    "dataset name": "dataset_name",
+    "public description": "dataset_description",
+    "originating organisation for data store": "source"
+}
 
 CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_DIR = os.path.join(os.path.dirname(CURRENT_DIRECTORY), "content")
@@ -55,29 +56,28 @@ def generate_data_elements(file_name):
     shutil.rmtree(OUTPUT_DIR)
     print(f"Creating {OUTPUT_DIR}")
     os.mkdir(OUTPUT_DIR)
-    expected = sorted([to_camel_case(i) for i in EXPECTED_FIELDS])
 
     populated_first_letters = set()
 
     # Generates all the data set pages
     with open(file_name) as f:
         csv_reader = csv.DictReader(f)
-        found = sorted([to_camel_case(i) for i in csv_reader.fieldnames])
-        missing = set(expected) - set(found)
+        missing = set(MAPPING.keys()) - set(i.lower() for i in csv_reader.fieldnames)
         if missing:
             raise ValueError(f"Missing fields, {missing}")
         for row in csv_reader:
             context = {}
-            for k, v in row.items():
-                if k.lower() == "dataset description":
-                    context[to_camel_case(k)] = v.strip()
-                elif k.lower() == "new?":
-                    context["new"] = v
+            for csv_field_name, value in row.items():
+                mapping = MAPPING.get(csv_field_name.lower())
+                if not mapping:
+                    continue
+                if mapping.lower() == "dataset_description":
+                    context[mapping] = value.strip()
                 else:
-                    context[to_camel_case(k)] = json.dumps(v.strip())
+                    context[mapping] = json.dumps(value.strip())
 
-                if to_camel_case(k) == "dataset_name":
-                    first_letter = to_camel_case(v)[0]
+                if mapping == "dataset_name":
+                    first_letter = to_camel_case(value)[0]
 
                     if first_letter.isnumeric():
                         first_letter = "0-9"

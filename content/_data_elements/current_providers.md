@@ -1,5 +1,5 @@
 ---
-dataset_name: "CurrentProviders"
+dataset_name: "Current Providers"
 source: "NHS"
 first_letter: C
 ---

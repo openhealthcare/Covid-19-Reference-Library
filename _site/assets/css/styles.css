@@ -112,6 +112,17 @@ h4.subheader {
 header.masthead {
   background-color: #005eb8;
   padding: 47px 0 0 0; }
+  header.masthead .container {
+    margin-top: 50px; }
+    @media screen and (max-width: 990px) {
+      header.masthead .container {
+        margin-top: 90px; } }
+    @media screen and (max-width: 990px) {
+      header.masthead .container {
+        margin-top: 120px; } }
+    @media screen and (max-width: 542px) {
+      header.masthead .container {
+        margin-top: 180px; } }
   header.masthead .logo:hover, header.masthead .logo:active, header.masthead .logo:focus {
     background-color: transparent;
     box-shadow: 0 0 0 4px transparent; }

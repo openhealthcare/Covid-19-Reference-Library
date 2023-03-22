@@ -95,6 +95,9 @@ body {
   margin-top: 50px;
 }
 
+.content-offset-10{
+  margin-top: 10px;
+}
 
 .content-offset-below{
   margin-bottom: 50px;
@@ -1076,4 +1079,11 @@ table thead{
 
 ul {
     list-style-type: '- ';
+}
+
+.banner-head {
+  background-color: #0072ce;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
 }
